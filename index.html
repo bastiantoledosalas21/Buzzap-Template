@@ -103,16 +103,32 @@
                   </div>
                   <div class="panel-body">
 
-                    <!-- Texto -->
+                    <!-- Nombre Pelicula-->
                     <div class="form-group">
                       <b>NombrePelicula</b>
                       <input type="text" class="form-control" name="nombrepelicula" id="nombrepelicula" placeholder="Ingrese el Nombre de la Pelicula">
+                        <div id="mensajeEventoFocus" class="alert alert-info" style="display: none">
                     </div>
 
-                    <!-- Unidades -->
                     <div class="form-group">
-                      <b>Numero de Copias</b>
-                      <input type="number" class="form-control" name="numerodecopias" min="0" max="50" id="numerodepeliculas" placeholder="Ingrese el Numero de Copias">
+                      <label>Haz clic en el siguiente campo: </label>
+                      <input type="text" class="form-control" id="campo_2" name="campo_2" />
+                      <div id="mensajeEventoFocus" class="alert alert-info" style="display: none">
+                        <i class="glyphicon glyphicon-fire"></i>
+                        Soy un mensaje que aparece al entrar dentro de este input
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+                  <!-- Unidades -->
+                  <div class="form-group">
+                    <b>Numero de Copias</b>
+                  <input type="number" class="form-control" name="numerocopias" min="0" max="50" id="numerocopias" placeholder="Ingrese el Numero de Copias">
                     </div>
 
                     <!-- Textarea -->
@@ -133,8 +149,6 @@
                         <i class="glyphicon glyphicon-repeat"></i>
                         <input type="reset" value="Reset" class="btn btn-success">
 
-
-
                       <!-- Button submit -->
                       <button type="submit" class="btn btn-success">
                         Enviar
@@ -142,7 +156,7 @@
                       </button>
                     </div>
                   </div>
-              
+
 
     </section>
 
@@ -427,6 +441,8 @@
         </div>
     </div>
 
+
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -442,7 +458,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
-
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="assets/js/codes.js"></script>
 </body>
 
 </html>
